@@ -1,0 +1,564 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: sans-serif;
+
+}
+:root{
+    --gray-color:#eeeff1;
+    --yellow-car:#fea038;
+}
+.navbar {
+  background-color: #00000044 !important;
+}
+.navbar img{
+    width: 60px;
+    flex-basis: 60px;
+    animation: slideright 0.5s ease forwards ;
+    animation-delay:calc(0.2s * var(--i));
+    opacity: 0;
+}
+@keyframes slideright{
+  0%{
+    transform: translateX(-200px);
+    opacity: 0;
+  }
+  100%{
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+#brandlink{
+  position: relative;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 10px 7px;
+  left: -10px;
+}
+#brandlink option{
+  background-color: #0000005b; 
+}
+.main-btn button{
+    border-radius: 10px;
+    background-color: #117ad1;
+    padding: 0.5rem 1rem;
+    font-weight: bold;
+    width: 100px;
+    outline: none;
+    border: none;
+    color: white;
+    animation: slideTop 0.5s ease forwards ;
+    animation-delay:calc(0.2s * var(--i));
+    opacity: 0;
+
+}
+#signup{
+    background-color: white;
+    color: black;
+}
+#signup:hover{
+    background-color: #0e92ff;
+    color: white;
+}
+.navbar ul li{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-left: 12px;
+}
+.navbar li{
+    position: relative;
+}
+.nav-item .nav-link{
+    color: white;
+    margin: 0.5rem 13px;
+    animation: slideTop 0.5s ease forwards ;
+    animation-delay:calc(0.2s * var(--i));
+    opacity: 0;
+}
+@keyframes slideTop{
+  0%{
+    transform: translateY(-200px);
+    opacity: 0;
+  }
+  100%{
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+.nav-item a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background-color: var(--yellow-car);
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+    transition: 0.5s;
+}
+.nav-item a:hover::after{
+    width: 100%;
+}
+.nav-item a:hover{
+    color: orange;
+}
+.navbar .navbar-toggler{
+    border: none;
+    outline: none;
+    
+}
+
+/* Home */
+
+.Home{
+  background-color:var(--gray-color);
+  width: 100%;
+  min-height: 100vh;
+}
+.content{
+    height:700px;
+    font-weight: bold;
+    justify-content: center;
+    display: flex;
+    flex-flow: column;
+}
+.content h1 {
+  font-family: 'Franklin Gothic Medium';
+}
+.content span{
+    color: orange;
+    font-weight: bold;
+}
+.content p{
+    max-width: 300PX;
+    margin-top: 20px;
+}
+.content .image img{
+    width: 170px;
+    margin: 5px;
+}
+.car-img img{
+  animation: zoomin 2s ease forwards;
+  animation-delay: 1.2s;
+  opacity: 0;
+}
+@keyframes zoomin{
+  0%{
+      transform: scale(0);
+      opacity: 0;
+  }
+  100%{
+      transform: scale(1);
+      opacity: 1;
+  }
+}
+
+/* Ride */
+
+.Ride{
+    background-color: #eeeff1;
+    margin-top: 40px;
+}
+.Ride h2{
+  color: orange;
+  text-shadow: 2px 3px 2px rgba(0, 0, 0, 0.498);
+}
+.Ride .featch{
+    background-color: orange;
+    color: black;
+    padding: 5px 10px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    position: relative;
+}
+.Ride .featch:hover{
+  box-shadow: 0px 0px 17px black;
+}
+.Ride .featch:hover{
+  color: white;
+  transition-duration: 0.5s;
+  transform: scale(1.05);
+}
+.Ride .featch svg{
+  font-size: 80px;
+}
+/* Brands */
+.brands {
+  background-color: var(--gray-color);
+}
+  .brands .row .mark{
+    background-color: var(--gray-color);
+    
+  }
+  .brands .row .mark img{
+    /* background-color: #0e92ff; */
+    padding: 30px;
+    margin: auto;
+    aspect-ratio: 3/2;
+    object-fit: contain;
+    mix-blend-mode:multiply;
+    cursor: pointer;
+  }
+  .brands .row .mark img:hover{
+    transform: scale(1.06);
+  }
+  .brands h2{
+    color: orange;
+    text-shadow: 2px 3px 2px rgba(0, 0, 0, 0.498);
+  }
+/* Brands */
+
+/* services */
+.Servises{
+    background-color: var(--gray-color);
+}
+.Servises h2{
+  color: orange;
+  text-shadow: 2px 3px 2px rgba(0, 0, 0, 0.498);
+}
+.Servises .row{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.Servises .row  a{
+  text-decoration: none;
+  color: #000;
+}
+.Servises .row a:hover{
+  color: orange;
+}
+.Servises .row h3:hover{
+  font-size: 30px;
+}
+.Servises .row img:hover{
+  transform: scale(1.05);
+  transition-duration: 0.5s;
+}
+/* about us */
+.AboutUs h2{
+  color: orange;
+  text-shadow: 2px 3px 2px rgba(0, 0, 0, 0.498);
+}
+#aboutus{
+    background-color:var(--gray-color);
+}
+#about{
+    color: #fea038;
+}
+.btn{
+    background-color: #0e92ff;
+    color: white;
+    border-radius: 10px;
+    padding:10px;
+    font-weight: bold;
+}
+.btn:hover{
+  background-color: orange;
+  color: white;
+}
+.about-img{
+    background-color: black;
+}
+/* reviwes */
+.reviwes {
+    background-color: var(--gray-color);
+}
+.reviwes h1{
+  color: orange;
+  text-shadow: 2px 3px 2px rgba(0, 0, 0, 0.498);
+}
+.reviwes .cards{
+  background-color: orange;
+  color: white;
+  box-shadow: 0px 0px 8px black;
+  padding: 5px 10px;
+  margin: 10px 0px;
+}
+.reviwes .card1 img{
+  width: 60px;
+  height: 50px;
+  border-radius: 50%;
+}
+.reviwes .card1 h4{
+  font-weight: bold;
+}
+.reviwes .card1 p{
+  font-size: 25px;
+}
+
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 100%;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 20px;
+    position: relative;
+  }
+  
+  .title {
+    font-size: 28px;
+    color: royalblue;
+    font-weight: 600;
+    letter-spacing: -1px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding-left: 30px;
+  }
+  
+  .title::before,.title::after {
+    position: absolute;
+    content: "";
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    left: 0px;
+    background-color: royalblue;
+  }
+  
+  .title::before {
+    width: 18px;
+    height: 18px;
+    background-color: royalblue;
+  }
+  
+  .title::after {
+    width: 18px;
+    height: 18px;
+    animation: pulse 1s linear infinite;
+  }
+  
+  .message, .signin {
+    color: rgba(88, 87, 87, 0.822);
+    font-size: 14px;
+  }
+  
+  .signin {
+    text-align: center;
+  }
+  
+  .signin a {
+    color: royalblue;
+  }
+  
+  .signin a:hover {
+    text-decoration: underline royalblue;
+  }
+  
+  .flex {
+    display: flex;
+    width: 80%;
+    gap: 6px;
+  }
+  
+  .form label {
+    position: relative;
+  }
+  
+  .form label .input {
+    width: 100%;
+    padding: 10px 10px 20px 10px;
+    outline: 0;
+    border: 1px solid rgba(105, 105, 105, 0.397);
+    border-radius: 10px;
+  }
+  
+  .form label .input + span {
+    position: absolute;
+    left: 10px;
+    top: 15px;
+    color: grey;
+    font-size: 0.9em;
+    cursor: text;
+    transition: 0.3s ease;
+  }
+  
+  .form label .input:placeholder-shown + span {
+    top: 15px;
+    font-size: 0.9em;
+  }
+  
+  .form label .input:focus + span,.form label .input:valid + span {
+    top: 30px;
+    font-size: 0.7em;
+    font-weight: 600;
+  }
+  
+  .form label .input:valid + span {
+    color: green;
+  }
+  
+  .submit {
+    border: none;
+    outline: none;
+    background-color: royalblue;
+    padding: 10px;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 16px;
+    transform: .3s ease;
+  }
+  
+  .submit:hover {
+    background-color: rgb(56, 90, 194);
+  }
+  
+  @keyframes pulse {
+    from {
+      transform: scale(0.9);
+      opacity: 1;
+    }
+    to {
+      transform: scale(1.8);
+      opacity: 0;
+    }
+  }
+  /* Footer */
+  .footer{
+    background-color: black;
+    color: orange;
+  }
+  .footer .fnav {
+    padding: 17px 5px;
+    color: white;
+  }
+  .footer .fnav ul li{
+    margin: -5px 0px;
+  }
+  .footer .category {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 8px 5px;
+    
+    
+  }
+  .footer .category .hr{
+    color: orange;
+    height: 2px;
+  }
+  .footer .category a{
+    position: relative;
+    text-decoration: none;
+    margin: 13px;
+  }
+  .footer .category a h3{
+    font-size: 16px;
+    color: white;
+    margin: 5px 0px; 
+  }
+  .footer .category a h3:hover{
+    letter-spacing: 1px;
+  }
+  .footer .category a::after{
+      content: '';
+      width: 0px;
+      height: 2px;
+      background-color: orange;
+      position: absolute;
+      bottom: 5px;
+      left: 0px;
+      transition: 0.5s;
+    }
+    .footer .category a:hover::after{
+        width: 100%;
+        
+    }
+
+    /* email */
+    .email h2{
+      color: white;
+    }
+    .email {
+      padding: 8px 15px;
+    }
+    .email label {
+      position: relative;
+      width: 80%;
+    }
+    
+    .email label .input {
+      width: 100%;
+      padding: 8px 10px;
+      width: 100%;
+      outline: 0;
+      border: 1px solid rgba(105, 105, 105, 0.397);
+      border-radius: 5px;
+    }
+    
+    .email label .input + span {
+      position: absolute;
+      left: 10px;
+      top: 15px;
+      color: grey;
+      font-size: 0.9em;
+      cursor: text;
+      transition: 0.3s ease;
+    }
+    
+    .email label .input:placeholder-shown + span {
+      top: 15px;
+      font-size: 0.9em;
+    }
+    
+    .email label .input:focus + span,.form label .input:valid + span {
+      top: 30px;
+      font-size: 0.7em;
+      font-weight: 600;
+    }
+    
+    .email label .input:valid + span {
+      color: green;
+    }
+    .email .btn{
+      background-color: orange;
+      padding: 8px 25px;
+      border-radius: 5px;
+      position: relative;
+      top: -1px;
+      margin: 10px 0px;
+    }
+    .email .icons{
+      width: 50%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .email .icons SVG{
+      font-size: 30px;
+      cursor: pointer;
+      margin: 5px;
+    }
+    .email .icons SVG:hover{
+      color: white;
+      transform: scale(1.08);
+    }
+    .email .info span{
+      color: white;
+      font-weight: bold;
+      font-size: 18px;
+      margin: 20px 0px;
+    }
+    .end{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .end img{
+      width: 80px;
+    }
+    .end .myinfo a{
+      text-decoration: none;
+    }
+    .end .myinfo img{
+      width: 60px;
+      height: 60px;
+      border-radius: 30px;
+    }

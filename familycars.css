@@ -1,0 +1,75 @@
+*{
+    padding: 0;
+    margin: 0px;
+    box-sizing: border-box;
+}
+.cars {
+text-align: center;
+font-weight: bold;
+font-family: 'Franklin Gothic Medium', Arial, sans-serif;
+background-image: url(b3.jpeg);
+background-position: bottom;
+background-size: cover;
+background-repeat: no-repeat;
+}
+.cars h2 {
+    color: orange;
+    text-shadow: 2px 3px 2px rgba(0, 0, 0, 0.498);
+}
+.cars .cards{
+    background-color: rgba(0, 0, 0, 0.694);
+    padding:20px;
+    text-align: start;
+    border-radius: 8px;
+    color: white;
+    margin: 10px 0px;
+}
+.cars .cards:hover{
+    background-color: black;
+}
+.cars .card_car{
+    background-image: url(grag.jpeg);
+    background-position: bottom;
+    /* background-size: cover; */
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 8px white;
+    height: 300px;
+}
+.cars .cards:hover .card_car{
+ transform: scale(1.03);
+ transition: 0.8s;
+ cursor: pointer;
+}
+.cars .card_car:hover img{
+ transform: rotateY(180deg);
+ transition: 1s;
+ cursor: pointer;
+}
+.cars .card_car img {
+    width: 350px;
+}
+.cars .cards .card_content{
+    padding: 10px 0px;
+}
+.cars .btns {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cars .btns button{
+    margin: 5px 10px;
+    width: 45%;
+    border: none;
+    padding: 3px 10px;
+    border-radius: 4px;
+    background-color: orange;
+    color: white;
+}
+.cars .btns button:hover{
+    background-color: white;
+    color: orangered;
+    transition: 0.3s;
+}
